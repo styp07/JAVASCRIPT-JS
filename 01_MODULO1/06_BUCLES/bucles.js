@@ -56,3 +56,40 @@ Las declaraciones para bucles proporcionadas en JavaScript son:
 
 */ 
 
+/*let num1 = 100000;
+while( num1 > 1){
+    let r = num1/10;
+    num1 = parseInt(num1/10)
+    console.log(r);
+}
+
+*/
+
+let año = 2022;
+let edad;
+
+do{
+
+if (edad == null) {
+    edad = prompt('dinos tu edad')
+}
+
+document.write(`${año} = ${edad} años <br>`);
+
+edad--;
+
+año--;
+
+}
+while(edad != 0)
+
+document.write(`<br>`)
+
+
+let n = prompt('¿Que número quieres hallas? limite 10000');
+for (let i = 0; i < 10001; i++) {
+    document.write(' ' + i)
+    if(i == n){
+        break
+    };
+}
