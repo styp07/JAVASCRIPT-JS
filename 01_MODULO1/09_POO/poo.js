@@ -120,6 +120,7 @@ Programación orientada a objetos: Es un estilo de programación orientada a obj
 
 // ---------------------------------------------------------------------------------
 
+
 // function Person(){ // ------------------------------------------------------------- > Constructor
 //     this.name = '';
 //     this.lastName = ''; 
@@ -136,25 +137,48 @@ Programación orientada a objetos: Es un estilo de programación orientada a obj
 // user1.age = 18;
 // user1.hobbies = ['Read', 'VideoGame', 'Football'];
 
+
 // ---------------------------------------------------------------------------------
 
-function Person (name, lastname, age) {  // --------------------- Como una función normal le podemos agregar parámetros.
-    this.name = name;
-    this.lastname = lastname;
-    this.age = age;
-    this.showFullName = function(){
-        return `${this.name} ${this.lastName}`
+
+// function Person (name, lastname, age) {  // --------------------- Como una función normal le podemos agregar parámetros.
+//     this.name = name;
+//     this.lastname = lastname;
+//     this.age = age;
+//     this.showFullName = function(){
+//         return `${this.name} ${this.lastName}`
+//     }
+// }
+
+// const jairo = new Person('Jairo', 'Rodriguez', 18);
+// const Camilo = new Person('Camilo', 'Castillo', 12);
+// const Carlos = new Person('Carlos', 'Perez', 22);
+// const Carmen = new Person('Carmen', 'Salasar', 19);
+
+// Person.prototype.greeting = function(){ // ----------------------> prototype: Nos permite modificar nuestro constructor después de haberlo creado.
+//     return `Hola los saluda ${this.name} ${this.lastname}, mucho gusto`;
+// }
+
+// console.log(jairo); // Mostramos todos los atributos del objeto y no vemos el método greeting.
+// console.log(jairo.greeting()); // Pero de igual manera podemos utilizar el método greeting ya que lo agregamos al objeto Person con prototype.
+
+
+//------------------------------------------------------------------------------------------------------------
+
+
+class Person{
+    constructor (name, lastname){
+        this.name = name;
+        this.lastname = lastname;
+    }
+
+    greet(){
+        return `Hola, soy ${this.name} ${this.lastname}`
     }
 }
 
-const jairo = new Person('Jairo', 'Rodriguez', 18);
-const Camilo = new Person('Camilo', 'Castillo', 12);
-const Carlos = new Person('Carlos', 'Perez', 22);
-const Carmen = new Person('Carmen', 'Salasar', 19);
+const user = new Person('Jairo','Rodriguez');
+const user2 = new Person('Carlos','Torres');
 
-Person.prototype.greeting = function(){ // ----------------------> prototype: Nos permite modificar nuestro constructor después de haberlo creado.
-    return `Hola los saluda ${this.name} ${this.lastname}, mucho gusto`;
-}
-
-console.log(jairo); // Mostramos todos los atributos del objeto y no vemos el método greeting.
-console.log(jairo.greeting()); // Pero de igual manera podemos utilizar el método greeting ya que lo agregamos al objeto Person con prototype.
+console.log(user.greet());
+console.log(user2.greet());
