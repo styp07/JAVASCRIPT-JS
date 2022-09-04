@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product App</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Inicio Navegación -->
+        <nav class="nav">
+            <a href="#" class="nav__link"> Product <span class="nav__link nav__span"> App</span></a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Inicio aplicación -->
+        <div class="container">
+            <div class="app" id="app">
+                <div class="app__section">
+                    <div class="card">
+                        <div class="card__header">
+                            <h4 class="card__title">Add a product</h4>
+                        </div>
+                        <form id="product-form" class="card__body">
+                            <input type="text" id="name" placeholder="Product name" class="form__input">
+                            <input type="number" id="price" step="0.00"placeholder="Product price" class="form__input">
+                            <input type="number" id="year" min="1910" value="2021" placeholder="Year product" class="form__input">
+                            <input type="submit" value="save" class="form__buttom"> 
+                        </form>
+                    </div>
+                </div>
+                <div class="app_section">
+                    <div class="product__lis">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
