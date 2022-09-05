@@ -31,11 +31,32 @@ body{
     color: rgb(219, 125, 126);
 }
 
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto .5rem;
+    height: 2.5rem;
+    font-size: 1.3em;
+    color: rgb(242, 243, 217);
+}
+
+.message__green{
+    background-color: rgb(20, 148, 52);
+}
+
+.message__red{
+    background-color: rgb(148, 20, 20);
+}
+
+.message__blue{
+    background-color: rgb(20, 90, 148);
+}
+
 .app{
     height: 85vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .app__section{
@@ -78,8 +99,8 @@ body{
 
 
 .product__lis{
+    margin: 2rem 1rem;
     width: 60vw;
-    background-color: aqua;
 }
 
 .form__buttom{
@@ -91,8 +112,47 @@ body{
     color: rgb(21, 30, 63);
     font-size: 1.5em;
     cursor: pointer;
+    border: none;
 }
 
 .form__buttom:hover{
     background-color: rgb(236, 171, 141)
+}
+
+.list__body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    height: 3rem;
+    background-color: rgb(21, 30, 63);
+    color: rgb(242, 243, 217);
+    margin: 1rem;
+}
+
+.list__strong{
+    color: rgb(193, 110, 112);
+    margin-left: 3rem;
+}
+
+.list__strong:first{
+    margin-left: 0;
+}
+
+.list__delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 6rem;
+    height: 100%;
+    text-decoration: none;
+    background-color: rgb(193, 110, 112);
+    color: rgb(3, 0, 39);
+    font-size: 1.2em;
+}
+
+.list__delete:hover{
+    background-color: rgb(228, 130, 132);
 }
