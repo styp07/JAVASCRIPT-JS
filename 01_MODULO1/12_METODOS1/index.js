@@ -27,8 +27,20 @@ Métodos string
 
 Métodos arrays
 
-    pop() - Elimina el ultimo elemento de un array
-    
+    pop() - Elimina el ultimo elemento de un array y lo devuelve
+    shift() - Elimina el primer elemento de un array y lo devuelve
+    push() - Agrega un elemento al array al final de la lista
+    reverse() - Invierte el orden de los elementos de un array
+    unshift() - Agrega uno o mas elementos al inicio del array, y devuelve la nueva longitud del array
+    sort() - Ordena los elementos de un arreglo localmente
+    splice() - Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos
+
+    join() - Une todos los elementos de una matriz en una cadena y lo devuelve
+    slice() - Devuelve una parte del array dentro de un nuevo array empezando por el inicio hasta el fin
+
+    filter() - Crea un nuevo array con todos los elementos que cumplan la condición 
+    forEach() - Ejecuta la función indicada una vez por cada elemento del array
+
 */
 
 // // concat -----------------------------------------------------------
@@ -136,3 +148,112 @@ Métodos arrays
 // // valueOf
 // var Student = { Name: 'Ali',  RollNo: '234' }
 // console.log(Student.valueOf()) 
+
+
+// --------------------------------------------------------------------------------
+
+
+// // pop
+
+// let nombres = ['Jairo','Danna', 'Paula'];
+// let resultado = nombres.pop();
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // shift
+
+// let nombres = ['Jairo','Danna', 'Paula'];
+// let resultado = nombres.shift();
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // push
+
+// let nombres = ['Jairo','Danna', 'Paula'];
+// let resultado = nombres.push('Styp');
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // reverse
+
+// let nombres = ['Jairo','Danna', 'Paula'];
+// let resultado = nombres.reverse();
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // unshift
+
+// let nombres = ['Jairo','Danna', 'Paula'];
+// let resultado = nombres.unshift('Styp', 'Mile', 'Jhon');
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // sort
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+// let resultado = nombres.sort();
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // splice
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+// let resultado = nombres.splice(1,3, 'Dinosaurio');
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // join
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+// let resultado = nombres.join(' | ');
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // join
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+// let resultado = nombres.join(' | ');
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // slice
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+// let resultado = nombres.slice(1,4);
+
+// console.log(resultado);
+// console.log(nombres);
+
+
+// // filter
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+
+// let resultado = nombres.filter(nombres => nombres.length > 4)
+
+// document.write(resultado)
+
+
+// // forEach
+
+// let nombres = ['Perro','Gato', 'Conejo', 'Abeja', 'Leon'];
+
+// nombres.forEach(nombres => document.write(nombres + '<br>'))
